@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Worldly Weather</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="pages.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav mr-auto navbar">
+                <li class="nav-item active navbar-brand">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active navbar-brand">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item active navbar-brand">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                <li class="nav-item active navbar-brand dropdown">
+                    <a class="nav-link dropdown-toggle btn" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Graphs</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="cloud.html">Cloud Coverage</a></li>
+                            <li><a class="dropdown-item" href="windspeed.html">Windspeed</a></li>
+                            <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                            <li><a class="dropdown-item" href="temp.html">Temperature</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="jumbotron">
+                    <h1>Humidity Data</h1>
+                    <p>This visualization displays a cities' humidty in relation to its latitude. We can see more cities have over 50% humidity! There are many variables to consider that could impact a cities' humidity. Some other variables to consider other than a cities' latitude and longitude could be the season currently affecting the city (e.g. summer vs. winter), proximity to other bodies of water or lack thereof, or other geological structures.  </p>
+                <div class='container'>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <div class="thumbnail">
+                                    <a target="_blank" href="lat_humidity.png"><img src="lat_humidity.png" alt="Humidity Data">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <h2>Visualizations</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="thumbnail">
+                                    <a target="" href="windspeed.html"><img src="lat_windspeed.png" alt="Windspeed Data"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="thumbnail">
+                                    <a target="" href="cloud.html"><img src="lat_cloudcover.png" alt="Cloud Coverage Data"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="thumbnail">
+                                    <a target=""  href="humidity.html"><img src="lat_humidity.png" alt="Humidity Data"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="thumbnail">
+                                    <a target=""  href="temp.html"><img src="lat_temp.png" alt="Temperature Data"></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+</body>
